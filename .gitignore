@@ -1,0 +1,8 @@
+# Compiled tex files
+*.out
+*.app
+*.aux
+*.log
+*.gz
+*.pdf
+*.toc

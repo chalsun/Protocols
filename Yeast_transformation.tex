@@ -1,0 +1,112 @@
+\documentclass[a4paper,12pt]{article}
+ 
+% TITLE PAGE CONTENT %%%%%%%%%%%%
+\newcommand{\protocol}{Transformation of Yeast}
+\newcommand{\labtitle}{LAB TITLE} 
+\newcommand{\authorname}{YOURNAME}
+% END TITLE PAGE CONTENT %%%%%%%%%%
+ 
+ 
+%Sans serif font
+\renewcommand{\familydefault}{\rmdefault} % changed \sfdefault to \rmdefault
+ 
+\usepackage{graphicx, float, array} % For images, tables & floats
+\usepackage{amsmath, amssymb} % For math
+\usepackage[margin=1in]{geometry} % Settings for margins
+\usepackage{fancyhdr, lastpage, extramarks, booktabs}
+ \usepackage{textcomp}
+\usepackage[pdftitle={\protocol}]{hyperref} %, pdfauthor={\authorname}]
+\hypersetup{colorlinks, citecolor=blue, filecolor=blue, linkcolor=black, urlcolor=blue}
+\usepackage{cite}
+
+%control spacing  between items in emumerate 
+\newenvironment{packed_enum}{
+\begin{enumerate}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{enumerate}} 
+
+%checkbox for protocol steps validation
+\newcommand{\checkbox}{$\square$\hspace{1mm}}
+\newcommand{\icb}{\item \checkbox}
+ 
+% Customize header and footer
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+\lhead{\normalfont\bfseries\firstleftmark}
+\chead{}
+\rhead{\protocol}       % Use \title macro from above
+\lfoot{}
+\cfoot{}
+\rfoot{Page\ \thepage\ of\ \protect\pageref*{LastPage}}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+ 
+\newcolumntype{C}[1]{>{\centering}p{#1}} %for tables alignements
+ 
+\newcommand{\up}[1]{\textsuperscript{#1}} 
+\setlength{\parindent}{0pt}
+\newcommand{\tab}{\hspace*{2em}}
+\setcounter{secnumdepth}{5}
+ 
+ 
+\begin{document}  % START THE DOCUMENT!
+ 
+ 
+% TITLE PAGE %%%%%%%%%%%%%%%%%%%
+ 
+\begin{titlepage}
+\begin{center}
+{\LARGE \textbf{\protocol} \\ \vspace{4pt}}
+\rule[13pt]{\textwidth}{1pt} \\ \vspace{150pt}
+%{\large By: \authorname \\ \vspace{10pt}
+%{\large For : \textsc{\labtitle} \\ \vspace{10pt}}
+%\today}
+\end{center}
+ 
+\end{titlepage}
+% END TITLE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+\newpage
+\thispagestyle{empty}           % Removes page number on this page
+\tableofcontents
+\clearpage                      % Moves us to next empty page
+ 
+\setcounter{page}{1}
+ 
+%%%%%%%%%%%%%%%
+\section{Introduction}
+%%%%%%%%%%%%%%%
+
+	\subsection{Solutions / reagents}
+	%%%%%%%%%%%%%%%
+			\begin{packed_enum}
+				{\icb} Plasmid DNA
+				{\icb} Carrier DNA (Salmon /Herring sperm DNa in H{\scriptsize2}O, 2 mg/ml stock, 500 $\mu$l aliquots, heat inactivated at 95\textcelsius for 5--6 minutes and keep on ice (has to be done once))
+				{\icb} 50\% Polyethylene glycol (PEG)MW 3350 solution (filter sterilized)
+				{\icb} 1 M Lithium acetate (autoclaved)
+				{\icb} Cells scrapped from plate
+				{\icb} Plates containing appropriate dropout medium
+				{\icb} ddH{\scriptsize2}O
+					\end{packed_enum}
+	\subsection{Equipment}
+			\begin{packed_enum}
+				{\icb} Machine 1
+				{\icb} Machine 2
+			\end{packed_enum}
+ 
+		\subsubsection{User supplied}
+			\begin{packed_enum}
+				{\icb} Ultra Pure Water
+			\end{packed_enum}
+%%%%%%%%%%%%%%%
+\section{Protocol}
+%%%%%%%%%%%%%%%
+	\subsection{Treatment 1}
+	%%%%%%%%%%%%%%%
+	\begin{enumerate}
+		{\icb} Try to do this
+		{\icb} and then this
+	\end{enumerate}
+\end{document} % DONE WITH DOCUMENT!

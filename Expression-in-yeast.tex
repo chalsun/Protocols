@@ -1,0 +1,186 @@
+\documentclass[a4paper,12pt]{article}
+ 
+% TITLE PAGE CONTENT %%%%%%%%%%%%
+\newcommand{\protocol}{Expression of recombinant proteins in yeast}
+%\newcommand{\labtitle}{} 
+%\newcommand{\authorname}{}
+% END TITLE PAGE CONTENT %%%%%%%%%%
+ 
+ 
+%Sans serif font
+\renewcommand{\familydefault}{\rmdefault} % sfdefault in template was changed to rmdefault here - looks better
+ 
+\usepackage{graphicx, float, array} % For images, tables & floats
+\usepackage{amsmath, amssymb} % For math
+\usepackage[margin=1in]{geometry} % Settings for margins
+\usepackage{fancyhdr, lastpage, extramarks, booktabs}
+\usepackage{textcomp} % for adding symbols
+\usepackage [pdftitle={\protocol}] {hyperref}  %,pdfauthor={\authorname}]
+\hypersetup{colorlinks, citecolor=blue, filecolor=blue, linkcolor=black, urlcolor=blue}
+\usepackage{cite}
+ 
+%control spacing  between items in emumerate 
+\newenvironment{packed_enum}{
+\begin{enumerate}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{enumerate}} 
+
+
+%checkbox for protocol steps validation
+\newcommand{\checkbox}{$\square$\hspace{1mm}}
+\newcommand{\icb}{\item \checkbox} 
+ 
+% Customize header and footer
+\setlength{\headheight}{12pt}
+\pagestyle{fancy}
+\lhead{\normalfont\bfseries\firstleftmark}
+\chead{}
+\rhead{\protocol}       % Use \title macro from above
+\lfoot{}
+\cfoot{}
+\rfoot{Page\ \thepage\ of\ \protect\pageref*{LastPage}}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+ 
+\newcolumntype{C}[1]{>{\centering}p{#1}} %for tables alignements
+ 
+\newcommand{\up}[1]{\textsuperscript{#1}} 
+\setlength{\parindent}{0pt}
+\newcommand{\tab}{\hspace*{2em}}
+\setcounter{secnumdepth}{5}
+ 
+ 
+\begin{document}  % START THE DOCUMENT!
+ 
+ 
+% TITLE PAGE %%%%%%%%%%%%%%%%%%%
+ 
+\begin{titlepage}
+\begin{center}
+{\LARGE \textbf{ \protocol} \\ \vspace{4pt}}
+\rule[13pt]{\textwidth}{1pt} \\ \vspace{150pt}
+%{\large By: \authorname \\ \vspace{10pt}
+%{\large For : \textsc{\labtitle} \\ \vspace{10pt}}
+%\today}
+\end{center}
+ 
+\end{titlepage}
+% END TITLE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+\newpage
+\thispagestyle{empty}           % Removes page number on this page
+{\LARGE \textbf{ \protocol} \\ \vspace{4pt}}
+\tableofcontents
+\clearpage                      % Moves us to next empty page
+ 
+\setcounter{page}{1}
+ 
+%%%%%%%%%%%%%%%
+\section{Introduction}
+This protocol is for the production of recombinant proteins in yeast. Purpose of this experiment is to find out the best time after induction of protein expression to isolate the recombinant proteins from yeast (Sacchromyces cerevisiae)
+\section{Materials required}
+
+		\subsection{Equipment required}
+			\begin{packed_enum}
+				\item 30{\textcelsius} shaker
+				\item 4{\textcelsius} Centrifuges
+				\item Sterile 1.5 ml microfuge tubes
+			\end{packed_enum}
+ 
+		\subsection{Chemicals required}
+			\begin{packed_enum}
+			\item Yeast Nitrogen Base
+			\item 10\% Raffinose stock -- filter sterilized
+			\item 20\% Galactose stock -- filter sterilized
+			\item 10X amino acid stock without uracil and tryptophan
+			\item Uracil --- Dropout for pYES2
+			\item Tryptophan --- Dropout for pGBKT7
+			\item Ultra Pure Water
+			\end{packed_enum}
+%%%%%%%%%%%%%%%
+\section{Media recipes}
+%%%%%%%%%%%%%%%
+	\subsection{Yeast Extract Peptone Dextrose Medium (YPD) -- 1L}
+	\begin{packed_enum}
+	 	{\icb} 10 g Yeast extract
+		{\icb} 20 g Peptone 
+		{\icb} 100 ml 20\% Dextrose solution (filter sterilized and add after autoclaving)
+		{\icb} 20 g Agar (For plates only)
+	\end{packed_enum}
+	
+	\subsection{SC dropout media -- 1L}
+	\begin{packed_enum}
+	 	{\icb} 6.7g Yeast nitrogen base
+		{\icb} 200 ml of 10\% Raffinose -- Add after autoclaving
+		{\icb} 100 ml 10X amino acid dropout solution
+		{\icb} 100 mg tryptophan (for SC-Uracil)
+	\end{packed_enum}
+
+	\subsection{10X amino acid dropout mix}
+	\begin{tabular}{l  c }
+		{\bf Aminoacid} & {\bf Amount}\\
+		\hline
+		Adenine & 1000 mg \\
+		Arginine & 1000 mg  \\
+		Cysteine & 1000 mg \\
+		Leucine & 1000 mg \\
+		Lysine& 1000 mg \\
+		Threonine & 1000 mg \\
+		Aspartic acid & 500 mg \\
+		Histidine & 500 mg \\
+		Isoleucine & 500 mg \\
+		Methionine & 500 mg \\
+		Phenylalanine & 500 mg \\
+		Proline & 500 mg \\
+		Serine & 500 mg \\
+		Tyrosine & 500 mg \\
+		Valine & 500 mg \\
+	\end{tabular}
+	
+		Add all aminoacids to ddH{\scriptsize2}O and make it up to 1000 ml. Either autoclave or fiter sterilize.
+	\subsection{Induction media -- 1L}
+	\begin{packed_enum}
+	 	{\icb} 6.7 g Yeast nitrogen base
+		{\icb} 100 ml of 20\% Galactose -- Add after autoclaving
+		{\icb} 100 ml of 10\% Raffinose -- Add after autoclaving
+		{\icb} 100 ml 10X amino acid dropout solution
+		{\icb} 100 mg tryptophan (for SC-Uracil)
+	\end{packed_enum}
+	
+	\subsection{Breaking buffer}
+	\begin{packed_enum}
+	{\icb} 50 mM Sodium phosphate
+	{\icb} 1 mM EDTA
+	{\icb} 5\% Glycerol
+	{\icb} 1 mM PMSF
+	{\icb} pH 7.4
+	
+	\end{packed_enum}
+\section {Protocol}
+	\subsection{Time course for expression of recombinant  protein}
+	\begin{packed_enum}
+			\item Incoculate single colony of yeast containing the desired construct into 15ml SC-Uracil medium with 2\% raffinose. Grow overnight at 30\textcelsius \ with shaking at 150 RPM. 
+			\item Determine OD{\scriptsize 600} of the overnight culture. Calculate the amount of overnight culture necessary to obtain a OD{\scriptsize 600} of 0.4 in 50 ml of induction solution.\\\\
+			eg. Assume OD{\scriptsize 600}\ of the culture is 3 OD{\scriptsize600} per ml.\\ \\
+			$\frac {(0.4 \ OD/ml)(50ml)}{3 \ OD/ml}$ = 6.67 ml\\
+			\item Remove the required amount (6.67 ml) and pellet cells by centrifuging at 1500 g for 5 minutes @ 4\textcelsius.
+			\item Re-suspend the cells in 1-2 ml of induction medium (SC-Uracil with 2\% galactose) and inoculate 50 ml of induction medium. Grow at 30\textcelsius in a shaker at 150 rpm.
+			\item Harvest 5 ml of culture at 0, 2, 4, 6, 8, 10 hours of culture. Determine the OD of each sample.
+			\item Centrifuge and pellet the cells at 1500 x g for 5 minutes @ 4\textcelsius.
+			\item Resuspend the cells in 500 $\mu$l \ of sterile water in a sterile 1.5 ml microfuge.
+			\item Centrifuge cells at max speed for 30 seconds and remove the supernatant.
+			\item Cells can be stored at -80\textcelsius \ until use.			
+	\end{packed_enum}
+	\subsection{Preparation of cell lysates}
+	\begin{packed_enum}
+		\item You can prepare cell lysates from  either frozen or fresh cells. You need to know the OD{\scriptsize600} of the cell samples before begining.
+		\item Resuspend cells in 500 $\mu$l of breaking buffer. Pellet at 1500 x g for 5 minutes @ 4\textcelsius
+		\item Remove supernatant and resuspend the cells in a volume of breaking buffer to obtain an OD{\scriptsize 600} of 50-100. Use the OD determined before to calculate the appropriate volume of beaking buffer to use.
+		\item Add equal volume of acid-washed glass beads and vortex for 30 seconds followed by 30 seconds on ice. Repeat 4 times.
+		\item Centrifuge for 10 minutes at max speed.
+		\item Remove supernatant and transfer to a new microcentrifuge tube. Assay for protein concentration using BSA as a standard.
+		
+	\end{packed_enum}
+\end{document} % DONE WITH DOCUMENT!
