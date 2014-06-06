@@ -1,0 +1,110 @@
+\documentclass[a4paper,12pt]{article}
+ 
+% TITLE PAGE CONTENT %%%%%%%%%%%%
+\newcommand{\protocol}{SDS-PAGE}
+%\newcommand{\labtitle}{LAB TITLE} 
+%\newcommand{\authorname}{YOURNAME}
+% END TITLE PAGE CONTENT %%%%%%%%%%
+ 
+ 
+%Sans serif font
+\renewcommand{\familydefault}{\rmdefault} % changed \sfdefault to \rmdefault
+ 
+\usepackage{graphicx, float, array} % For images, tables & floats
+\usepackage{amsmath, amssymb} % For math
+\usepackage[margin=1in]{geometry} % Settings for margins
+\usepackage{fancyhdr, lastpage, extramarks, booktabs}
+\usepackage{textcomp}
+\usepackage[pdftitle={\protocol}]{hyperref}
+\hypersetup{colorlinks, citecolor=blue, filecolor=blue, linkcolor=black, urlcolor=blue}
+\usepackage{cite}
+
+%control spacing  between items in emumerate 
+\newenvironment{packed_enum}{
+\begin{enumerate}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{enumerate}} 
+
+%checkbox for protocol steps validation
+\newcommand{\checkbox}{$\square$\hspace{1mm}}
+\newcommand{\icb}{\item \checkbox}
+ 
+% Customize header and footer
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+\lhead{\normalfont\bfseries\firstleftmark}
+\chead{}
+\rhead{\protocol}       % Use \title macro from above
+\lfoot{}
+\cfoot{}
+\rfoot{Page\ \thepage\ of\ \protect\pageref*{LastPage}}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+ 
+\newcolumntype{C}[1]{>{\centering}p{#1}} %for tables alignements
+ 
+\newcommand{\up}[1]{\textsuperscript{#1}} 
+\setlength{\parindent}{0pt}
+\newcommand{\tab}{\hspace*{2em}}
+\setcounter{secnumdepth}{5}
+ 
+ 
+\begin{document}  % START THE DOCUMENT!
+ 
+ 
+% TITLE PAGE %%%%%%%%%%%%%%%%%%%
+ 
+\begin{titlepage}
+\begin{center}
+{\LARGE \textbf{\protocol} \\ \vspace{4pt}}
+\rule[13pt]{\textwidth}{1pt} \\ \vspace{150pt}
+%\today}
+\end{center}
+ 
+\end{titlepage}
+% END TITLE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+\newpage
+\thispagestyle{empty}           % Removes page number on this page
+\tableofcontents
+\clearpage                      % Moves us to next empty page
+ 
+\setcounter{page}{1}
+ 
+%%%%%%%%%%%%%%%
+\section{Introduction}
+%%%%%%%%%%%%%%%
+
+\section{Chemicals}
+	%%%%%%%%%%%%%%%
+		Any useful material
+\section{Equipment}
+	\begin{packed_enum}
+		\item Machine 1
+		\item Machine 2
+	\end{packed_enum}
+ 
+\section{User supplied}
+	\begin{packed_enum}
+		\item Ultra Pure Water
+	\end{packed_enum}
+%%%%%%%%%%%%%%%
+\section{Protocol}
+%%%%%%%%%%%%%%%
+	\subsection{Acrylamide gel \%}
+	%%%%%%%%%%%%%%%
+	\begin{tabular}{l r r r r r}
+	{\bf   } & {\bf 6\%} & {\bf 8\%} & {\bf 10\%} & {\bf 12\%} & {\bf 15\%}\\
+			\hline
+	Acrylamide	&	1.6	& 2.1 & 2.7 & 3.2 &	4 \\
+	10\% SDS		 & 0.1	 & 0.1 & 	0.1 & 	0.1	 & 0.1\\
+	1.5M Tris pH 8.8  & 2.6	 & 2.6	 & 2.6	 & 2.6	& 2.6\\
+	10\% APS		 & 0.1	 & 0.1	 & 0.1	 & 0.1	 & 0.1\\
+	TEMED		 & 0.01 & 0.01 & 0.01	 & 0.01	 & 0.01\\
+	H2O		 & 5.6	 & 5.1	 & 4.5	 & 4.0	 & 3.2\\
+		\hline
+	
+	\end{tabular}
+\end{document} % DONE WITH DOCUMENT!
