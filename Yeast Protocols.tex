@@ -1,9 +1,9 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,12pt] {book}%{article}
  
 % TITLE PAGE CONTENT %%%%%%%%%%%%
 \newcommand{\protocol}{Yeast Protocols}
 \newcommand{\labtitle}{} 
-\newcommand{\authorname}{Charleson Poovaiah}
+\newcommand{\authorname}{}
 % END TITLE PAGE CONTENT %%%%%%%%%%
  
  
@@ -12,7 +12,7 @@
 \usepackage{verbatim}
 \usepackage{graphicx, float, array} % For images, tables & floats
 \usepackage{amsmath, amssymb} % For math
-\usepackage[margin=1.5in]{geometry} % Settings for margins
+\usepackage[margin=1in]{geometry} % Settings for margins
 \usepackage{fancyhdr, lastpage, extramarks, booktabs}
 \usepackage{textcomp}
 \usepackage{makeidx}
@@ -60,13 +60,13 @@
  
 \begin{titlepage}
 \begin{center}
-{\LARGE \textbf{\protocol} \\ \vspace{4pt}}
+{\LARGE \textbf{\protocol\footnote{Compiled from various sources including internet, manuals and books}} \\ \vspace{4pt}}
 \rule[13pt]{\textwidth}{1pt} \\ \vspace{150pt}
  
-{\large Compiled\footnote{Compiled from various sources including internet, manuals and books} by: \authorname \\ \vspace{10pt}
+%{\large by: \authorname \\ \vspace{10pt}
 %{\large For : \textsc{\labtitle} \\ \vspace{10pt}}
 %\today}
-}
+%}
 \end{center}
 \end{titlepage}
 % END TITLE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -77,12 +77,15 @@
 \tableofcontents
 \clearpage                      % Moves us to next empty page
  
-\setcounter{page}{1}
+\setcounter{page}{5}
 \include{Yeast_transformation}
 \include{Yeast_pcr}
 \include{Expression-in-yeast}
 \include{SDS-PAGE}
 \include{Mug_assay}
+\include{Yeast_plasmid_extraction}
 
+
+%\include{recipes}
 \printindex
 \end{document} % DONE WITH DOCUMENT!

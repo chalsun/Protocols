@@ -1,42 +1,49 @@
-\BOOKMARK [0][-]{part.1}{I Yeast transformation}{}% 1
-\BOOKMARK [1][-]{section.trans.1}{Materials required}{part.1}% 2
+\BOOKMARK [0][-]{chapter.1}{Yeast transformation}{}% 1
+\BOOKMARK [1][-]{section.trans.1}{Materials required}{chapter.1}% 2
 \BOOKMARK [2][-]{subsection.trans.1.1}{Solutions / reagents}{section.trans.1}% 3
 \BOOKMARK [2][-]{subsection.trans.1.2}{Equipment}{section.trans.1}% 4
-\BOOKMARK [1][-]{section.trans.2}{Procedure}{part.1}% 5
-\BOOKMARK [0][-]{part.2}{II PCR}{}% 6
-\BOOKMARK [1][-]{section.pcr.1}{Introduction}{part.2}% 7
-\BOOKMARK [1][-]{section.pcr.2}{Materials required}{part.2}% 8
-\BOOKMARK [1][-]{section.pcr.3}{Procedure}{part.2}% 9
-\BOOKMARK [0][-]{part.3}{III Expression of recombinant proteins in yeast}{}% 10
-\BOOKMARK [1][-]{section.exy.1}{Introduction}{part.3}% 11
-\BOOKMARK [1][-]{section.exy.2}{Materials required}{part.3}% 12
-\BOOKMARK [2][-]{subsection.exy.2.1}{Equipment required}{section.exy.2}% 13
-\BOOKMARK [2][-]{subsection.exy.2.2}{Chemicals required}{section.exy.2}% 14
-\BOOKMARK [1][-]{section.exy.3}{Media recipes}{part.3}% 15
-\BOOKMARK [2][-]{subsection.exy.3.1}{20 \045 Galactose}{section.exy.3}% 16
-\BOOKMARK [2][-]{subsection.exy.3.2}{10 \045 Raffinose}{section.exy.3}% 17
-\BOOKMARK [2][-]{subsection.exy.3.3}{20 \045 Glucose}{section.exy.3}% 18
-\BOOKMARK [2][-]{subsection.exy.3.4}{10X amino acid dropout mix}{section.exy.3}% 19
-\BOOKMARK [2][-]{subsection.exy.3.5}{Yeast Extract Peptone Dextrose Medium \(YPD\) \205 1L}{section.exy.3}% 20
-\BOOKMARK [2][-]{subsection.exy.3.6}{SC dropout media \205 1L}{section.exy.3}% 21
-\BOOKMARK [2][-]{subsection.exy.3.7}{Induction media \205 1L}{section.exy.3}% 22
-\BOOKMARK [2][-]{subsection.exy.3.8}{Breaking buffer}{section.exy.3}% 23
-\BOOKMARK [1][-]{section.exy.4}{Protocol}{part.3}% 24
-\BOOKMARK [2][-]{subsection.exy.4.1}{Time course for expression of recombinant protein}{section.exy.4}% 25
-\BOOKMARK [2][-]{subsection.exy.4.2}{Preparation of cell lysates}{section.exy.4}% 26
-\BOOKMARK [0][-]{part.4}{IV SDS-PAGE}{}% 27
-\BOOKMARK [1][-]{section.sds.1}{Introduction}{part.4}% 28
-\BOOKMARK [1][-]{section.sds.2}{Materials required}{part.4}% 29
-\BOOKMARK [2][-]{subsection.sds.2.1}{Chemicals/solutions}{section.sds.2}% 30
-\BOOKMARK [2][-]{subsection.sds.2.2}{Equipment}{section.sds.2}% 31
-\BOOKMARK [1][-]{section.sds.3}{Protocol}{part.4}% 32
-\BOOKMARK [2][-]{subsection.sds.3.1}{Acrylamide gel \045}{section.sds.3}% 33
-\BOOKMARK [0][-]{part.5}{V MUG assay}{}% 34
-\BOOKMARK [1][-]{section.exy.1}{Introduction}{part.5}% 35
-\BOOKMARK [1][-]{section.exy.2}{Materials}{part.5}% 36
-\BOOKMARK [2][-]{subsection.exy.2.1}{Chemicals}{section.exy.2}% 37
-\BOOKMARK [2][-]{subsection.exy.2.2}{Equipment}{section.exy.2}% 38
-\BOOKMARK [1][-]{section.exy.3}{Protocol}{part.5}% 39
-\BOOKMARK [2][-]{subsection.exy.3.1}{Preparation of stock solutions}{section.exy.3}% 40
-\BOOKMARK [2][-]{subsection.exy.3.2}{Preparation of working solutions}{section.exy.3}% 41
-\BOOKMARK [1][-]{section.exy.4}{Procedure}{part.5}% 42
+\BOOKMARK [1][-]{section.trans.2}{Recipes}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.trans.2.1}{Yeast extract Peptone Dextrose \(YPD\)medium}{section.trans.2}% 6
+\BOOKMARK [2][-]{subsection.trans.2.2}{SC dropout medium \2051L}{section.trans.2}% 7
+\BOOKMARK [1][-]{section.trans.3}{Procedure}{chapter.1}% 8
+\BOOKMARK [0][-]{chapter.2}{PCR}{}% 9
+\BOOKMARK [1][-]{section.pcr.1}{Introduction}{chapter.2}% 10
+\BOOKMARK [1][-]{section.pcr.2}{Materials required}{chapter.2}% 11
+\BOOKMARK [1][-]{section.pcr.3}{Procedure}{chapter.2}% 12
+\BOOKMARK [0][-]{chapter.3}{Expression of recombinant proteins in yeast}{}% 13
+\BOOKMARK [1][-]{section.exp.1}{Introduction}{chapter.3}% 14
+\BOOKMARK [1][-]{section.exp.2}{Materials required}{chapter.3}% 15
+\BOOKMARK [2][-]{subsection.exp.2.1}{Equipment required}{section.exp.2}% 16
+\BOOKMARK [2][-]{subsection.exp.2.2}{Chemicals required}{section.exp.2}% 17
+\BOOKMARK [1][-]{section.exp.3}{Media recipes}{chapter.3}% 18
+\BOOKMARK [2][-]{subsection.exp.3.1}{20 \045 Galactose}{section.exp.3}% 19
+\BOOKMARK [2][-]{subsection.exp.3.2}{10 \045 Raffinose}{section.exp.3}% 20
+\BOOKMARK [2][-]{subsection.exp.3.3}{20 \045 Glucose}{section.exp.3}% 21
+\BOOKMARK [2][-]{subsection.exp.3.4}{10X amino acid dropout mix}{section.exp.3}% 22
+\BOOKMARK [2][-]{subsection.exp.3.5}{Yeast Extract Peptone Dextrose Medium \(YPD\) \205 1L}{section.exp.3}% 23
+\BOOKMARK [2][-]{subsection.exp.3.6}{SC dropout media \205 1L}{section.exp.3}% 24
+\BOOKMARK [2][-]{subsection.exp.3.7}{Induction media \205 1L}{section.exp.3}% 25
+\BOOKMARK [2][-]{subsection.exp.3.8}{Breaking buffer}{section.exp.3}% 26
+\BOOKMARK [1][-]{section.exp.4}{Protocol}{chapter.3}% 27
+\BOOKMARK [2][-]{subsection.exp.4.1}{Time course for expression of recombinant protein \(Protocol specifically for pYES2\)}{section.exp.4}% 28
+\BOOKMARK [2][-]{subsection.exp.4.2}{Preparation of cell lysates}{section.exp.4}% 29
+\BOOKMARK [0][-]{chapter.4}{SDS-PAGE}{}% 30
+\BOOKMARK [1][-]{section.sds.1}{Introduction}{chapter.4}% 31
+\BOOKMARK [1][-]{section.sds.2}{Materials required}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.sds.2.1}{Chemicals/solutions}{section.sds.2}% 33
+\BOOKMARK [2][-]{subsection.sds.2.2}{Equipment}{section.sds.2}% 34
+\BOOKMARK [1][-]{section.sds.3}{Protocol}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.sds.3.1}{Acrylamide gel \045}{section.sds.3}% 36
+\BOOKMARK [0][-]{chapter.5}{MUG assay}{}% 37
+\BOOKMARK [1][-]{section.mug.1}{Introduction}{chapter.5}% 38
+\BOOKMARK [1][-]{section.mug.2}{Materials}{chapter.5}% 39
+\BOOKMARK [2][-]{subsection.mug.2.1}{Chemicals}{section.mug.2}% 40
+\BOOKMARK [2][-]{subsection.mug.2.2}{Equipment}{section.mug.2}% 41
+\BOOKMARK [1][-]{section.mug.3}{Protocol}{chapter.5}% 42
+\BOOKMARK [2][-]{subsection.mug.3.1}{Preparation of stock solutions}{section.mug.3}% 43
+\BOOKMARK [2][-]{subsection.mug.3.2}{Preparation of working solutions}{section.mug.3}% 44
+\BOOKMARK [1][-]{section.mug.4}{Procedure}{chapter.5}% 45
+\BOOKMARK [0][-]{chapter.6}{Yeast plasmid extraction}{}% 46
+\BOOKMARK [1][-]{section.pcr.1}{Introduction}{chapter.6}% 47
+\BOOKMARK [1][-]{section.pcr.2}{Materials required}{chapter.6}% 48
+\BOOKMARK [1][-]{section.pcr.3}{Procedure}{chapter.6}% 49
